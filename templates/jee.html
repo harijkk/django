@@ -1,0 +1,44 @@
+{%extends 'base.html'%}
+{% block content %}
+{%include 'navbar.html'%}
+
+<h1> APPLICATION FORM</h1>
+<form  method="POST"  action="add1" enctype="multipart/form-data" name="myform" onsubmit="return validation()">
+    {% csrf_token %}
+    <div id= form1>
+    Enter Your Name  :<input type="text" name ="name" placeholder="YOUR NAME" required ><br><br>
+    <br>Enter Your Place :<input type="text" name ="place" placeholder="PLACE" required>
+    <br><br>Enter Your Aaadhar No: <input type="number" name="adhar" placeholder="12-digit aadhar number" required>
+    <br><br><p>Gender  : </p>
+    <input type="radio" name="gender" value ="M" >MALE<br><br>
+    <input type="radio" name="gender" value ="F">FEMALE<br><br>
+    <br><br>
+
+    RELIGION   <select name='religion'  required><br>
+        <option value ="0">----PLEASE SELECT----</option>
+        <option value="Hindu">HINDU</option>
+        <option value="Christian">CHRISTIAN</option>
+        <option value="Muslim">MUSLIM</option> 
+        <option value="Others">OTHERS</option> 
+    </select><br>
+    <br><br><br><br>
+    BIRTHDAY<input type="date" name="bd" required > <br><br><br><br>
+    EMAIL :<input type="email" name="mail" placeholder="xxx@xyz.com" required><br><br>
+    IDENTITY PROOF:<input type="file" name="pic" ><br>
+    <input type="submit" >
+
+</div>
+    <script>
+        var numb=document.forms['myform']['adhar'];
+        function validation(){
+            if(numb.value <100000000000 || numb.value >999999999999){
+                alert("Enter a valid aadhar number");
+                return false;
+            }
+        }
+       
+
+    </script>
+
+
+{% endblock %}

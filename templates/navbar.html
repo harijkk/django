@@ -1,0 +1,46 @@
+{%extends 'base.html'%}
+{%block content%}
+{%block navbar %}
+  
+    <div id="container">
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="#">NATIONAL EXAMS</a>
+            <ul>
+                <li><a href="{% url 'jee' %}">JEE MAIN</a></li>
+                <li><a href="{% url 'jee' %}">AIIMS</a></li>
+                <li><a href="{% url 'jee' %}">UPSC</a></li>
+            </ul>        
+            </li>
+            <li><a href="#">BANK EXAMS</a>
+ 
+		<ul>
+                <li><a href="{% url 'jee' %}">SBI</a></li>
+                <li><a href="{% url 'jee' %}">BOI</a></li>
+                <li><a href="{% url 'jee' %}">INDIAN BANK</a></li>
+        </ul>
+            </li>
+           
+        
+            
+        <li><a href="#">UNIVERSITY EXAMS</a>
+            <ul>
+                <li><a href="{% url 'vit' %}">VIT</a></li>
+                <li><a href="{% url 'jee' %}">IIT</a></li>
+                <li><a href="{% url 'jee' %}">SRM</a></li>
+            </ul>        
+            </li>
+            <li><a href="#">Contact</a>
+                <ul><li><a href="#">xyz@university.com</a></li>
+                    <li><a href="#">Ph:9999999999</a></li>
+    
+                </ul>
+            </li>
+            <li><a href="{% url 'about' %}">About</a></li>
+        </ul>
+    </nav>
+ 
+</div>
+ {% endblock %}
+ {% endblock %}

@@ -1,0 +1,151 @@
+
+
+body {
+	background-image: url(../static/images/321.jpg);
+	font-size:30px;
+	line-height: 3px;
+	word-wrap:break-word !important;
+    font-family: 'Quicksand', sans-serif;
+	margin: 0;
+	padding: 0;
+	color: aliceblue;
+}
+h1 {
+	font-size: 50px;
+	text-align: center;
+	color: aliceblue;
+	margin-top: 100px;
+    font-family: 'Russo One', sans-serif;
+	}
+h1 img{
+	margin:0 5px 0 0;
+}
+#container {
+	margin: 0;
+
+}
+ 
+nav {
+	margin: 0;
+	background-color: transparent;
+	width: 100%;
+	font-size: 75px;
+
+}
+nav ul {
+	padding: 0;
+    margin: 0	;
+	list-style: none;
+	position: relative;
+	font-weight: bold;
+	font-size: xx-large;	
+	
+	
+	}	
+nav ul li {
+	display:inline-block;
+	background-color:transparent;
+	padding-right: 100px;
+	padding-right: 100px;
+	font-size: 100px;
+	font-style: oblique;
+	font-display: bold;
+
+	
+	}
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:#FFF;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+	
+}
+nav a:hover { 
+	background-color:black ;
+	display: block;
+
+}
+nav ul ul {
+	display:none ;
+	position: absolute; 
+	top: 60px; 	
+	background-color:rgba(0, 0, 0, 0.808);z-index: 1; 
+}	
+nav ul li:hover > ul {
+	display:inherit;
+	
+}	
+nav ul ul li {
+	width:230px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+nav ul ul ul li {
+	position: relative;
+	top:-60px; 
+	left:230px;
+}
+nav ul ul li {
+	border: 1px solid white;
+}	
+li > a:after { content:  ' ▼'; }
+li > a:only-child:after { content: ''; }
+h3{
+    color:rgba(255, 255, 0, 0.589);
+	text-align: right;
+	font-size: 25px; 
+}
+#form1{
+	border-spacing: 4cm;
+}
+input{
+	padding: 7px 0;
+	margin: 8px;
+	font-size: 18px;
+}
+select{
+	padding: 7px 0;
+	margin: 8px;
+
+}
+h2{
+	font-size: 25px;
+}
+#announcement{
+	background-color: burlywood;
+}
+h4{
+	text-decoration: underline white; 
+	font-weight: bold;
+}
+.space{
+	padding-top: 350px;
+
+}
+.about{
+	margin: 10px;
+	padding-top: 50px;
+	padding-left: 5px;
+	
+	vertical-align: middle;
+	display:inline-block ;
+	line-height:50px;
+	font-size: 25px;
+	font-weight: bold;
+	font-family: 'Times New Roman', Times, serif;
+	word-spacing: 8px;
+}
+
+#form1{
+	font-size: 20px;
+	line-height: 10px;
+}
+#form2{
+	font-size: 15px;
+}
+option{
+	font-size: 18px;
+}
