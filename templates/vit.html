@@ -1,9 +1,9 @@
 {%extends 'base.html'%}
-{% block content %}
+{% block body %}
 {%include 'navbar.html'%}
 
 <h1> APPLICATION FORM <img src="../static/images/vit.jpg" width="100px" height="100px" id="img1"></h1>
-<form  method="POST"  action="add1" enctype="multipart/form-data" name="myform" onsubmit="return validation()">
+<form  method="POST"  action="add1" enctype="multipart/form-data" name="myform" onsubmit="return validation()" autocomplete="off">
     {% csrf_token %}
     <div id= form1>
     Enter Your Name  :<input type="text" name ="name" placeholder="YOUR NAME" required ><br><br>

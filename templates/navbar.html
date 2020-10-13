@@ -1,11 +1,11 @@
 {%extends 'base.html'%}
-{%block content%}
+{%block body%}
 {%block navbar %}
   
     <div id="container">
     <nav>
         <ul>
-            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'home' %}">HOME</a></li>
             <li><a href="#">NATIONAL EXAMS</a>
             <ul>
                 <li><a href="{% url 'jee' %}">JEE MAIN</a></li>
@@ -31,13 +31,13 @@
                 <li><a href="{% url 'jee' %}">SRM</a></li>
             </ul>        
             </li>
-            <li><a href="#">Contact</a>
+            <li><a href="#">CONTACT</a>
                 <ul><li><a href="#">xyz@university.com</a></li>
                     <li><a href="#">Ph:9999999999</a></li>
     
                 </ul>
             </li>
-            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'about' %}">ABOUT</a></li>
         </ul>
     </nav>
  

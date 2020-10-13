@@ -1,10 +1,11 @@
 {%extends 'base.html'%}
 {% load static %}
-{%block content %}
+{%block body %}
+
 <h1><center> WELCOME TO THE EXAMINATION PORTAL</center></h1><br /><br /><br />
 <script>
    
-  var n = formatAMPM();
+var n = formatAMPM();
 
 function formatAMPM() {
 var d = new Date(),
@@ -16,6 +17,13 @@ var d = new Date(),
 return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear()+' '+hours+':'+minutes+ampm;
 }
 
+if(sessionStorage.getItem("name")==null)
+{
+var name =prompt("ENTER YOUR NAME TO CONTINUE");
+sessionStorage.setItem("name",name);
+}
+name1=sessionStorage.getItem("name");
+document.write(`<h3>  Welcome ${name}   </h3>`);
 document.write(`<h3>   ${n} </h3>`);
         
 </script>
@@ -33,7 +41,7 @@ document.write(`<h3>   ${n} </h3>`);
 <br />
 <h4>LATEST NEWS</h4>
 <marquee behavior="scroll" direction="left" onmouseover="this.stop();"
-onmouseout="this.start();" ><h2>Click<a href="http://ntaresults.nic.in/resultservices/JEEMainP1-Apr20-auth"><mark id="announcement">here</mark></a> to check the results for jee main 2020 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;AIIMS 2020 RESULT TO BE ANNOUNCED ON 13 OCTOBER 2020</h2></marquee>
+onmouseout="this.start();" ><h2>Click<a href="http://ntaresults.nic.in/resultservices/JEEMainP1-Apr20-auth"><mark id="announcement">here</mark></a> to check the results of JEE MAIN 2020 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;AIIMS 2020 RESULTS TO BE DECLARED ON 16TH OCTOBER 2020</h2></marquee>
 
 <br><br><br><br><br>
 <div class="space">
