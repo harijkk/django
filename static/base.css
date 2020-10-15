@@ -14,7 +14,7 @@ h1 {
 	font-size: 50px;
 	text-align: center;
 	color: aliceblue;
-	margin-top: 100px;
+	margin-top: 50px;
     font-family: 'Russo One', sans-serif;
 	}
 h1 img{
@@ -122,7 +122,7 @@ h4{
 	font-weight: bold;
 }
 .space{
-	padding-top: 350px;
+	padding-top: 100px;
 
 }
 .about{
@@ -148,4 +148,24 @@ h4{
 }
 option{
 	font-size: 18px;
+}
+.admission{
+	margin: 5px;
+	padding-top: 20px;
+	padding-left: 5px;
+	
+	vertical-align: middle;
+	display:inline-block ;
+	line-height:8px;
+	font-size: 25px;
+	font-weight: bold;
+	font-family: 'Times New Roman', Times, serif;
+	word-spacing: 5px;
+
+}
+a.more{
+	color:greenyellow;
+}
+a.more:hover{
+	color:red;
 }

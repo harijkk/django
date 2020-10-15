@@ -10,7 +10,7 @@ def jee(request):
    
     return render(request,'jee.html',{'title':'APPLICATION'}) 
 def year(request):
-    return render(request,'year.html')  
+    return render(request,'year.html',{'title':'EXAMS SCHEDULE'})  
 def add1(request):
     
    name=request.POST['name']

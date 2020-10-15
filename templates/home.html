@@ -1,8 +1,7 @@
 {%extends 'base.html'%}
 {% load static %}
 {%block body %}
-
-<h1><center> WELCOME TO THE EXAMINATION PORTAL</center></h1><br /><br /><br />
+<h1><center> WELCOME TO THE EXAMINATION PORTAL<img src="../static/images/emb2.png" width="100px" height="100px" id="img1"></center></h1><br /><br /><br />
 <script>
    
 var n = formatAMPM();
@@ -44,6 +43,13 @@ document.write(`<h3>   ${n} </h3>`);
 onmouseout="this.start();" ><h2>Click<a href="http://ntaresults.nic.in/resultservices/JEEMainP1-Apr20-auth"><mark id="announcement">here</mark></a> to check the results of JEE MAIN 2020 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;AIIMS 2020 RESULTS TO BE DECLARED ON 16TH OCTOBER 2020</h2></marquee>
 
 <br><br><br><br><br>
+<h4> APPLICATIONS OPEN</h4><br>
+<div class="admission">
+<ul>
+  <li>BTECH Admission open in Vellore Institute of Technology [VIT] .<a href="{% url 'vit' %}" class="more"  >APPLY NOW</a></li><br><br><br><br><br><br><br><br>
+  <li>Intg Mtech Admission open in Indian Institute of Technology[IIT] <a href="{% url 'jee' %}" class="more"> APPLY NOW</a></li><br><br>
+</ul>
+</div>
 <div class="space">
 <h2>Click <a style="color: blanchedalmond;" href="templates/year.html">here</a> to view the exams scheduled for the year 2020</h2>
 </div>
